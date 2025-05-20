@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KARDEX</title>
+</head>
+<body>
+    <BR></BR><BR></BR><BR></BR>
+    <center>
+    <h1>SUSHITO</h1>
+</center>
+    <input style="margin-left: 560px;" type="text">
+    <label for="">usuario</label>
+    <br>
+    <br>
+    <input style="margin-left: 560px;" type="password" id="password">
+    <label for="">contraseña</label>
+<br>
+
+   <input style="margin-left: 560px;" type="checkbox" id="showpass" onchange="onCheck(this)">
+   <label for="showpass" id="label-show">Mostar contraseña</label>
+    <SCript>
+  function onCheck(e){
+    var inputpass = document.getElementById("password");
+        var labelshow = document.getElementById("label-show");
+        inputpass.type=e.checked ? "text" : "password";
+        labelshow.textContent=e.checked ? "Ocultar contraseña" : "Mostrar contraseña";
+        
+        
+  }
+
+</SCript>
+<br><br>
+<a style="margin-left: 560px;" href="recuperacion.html">¿olvidaste tu contraseña?</a>
+<br><br>
+<a href="principal.html"><button style="margin-left: 550px;">ingresar</button></a>
+<a href="practica8.html"> <button style="margin-left: 5px;">registrate</button></a>
+<video autoplay loop controls>
+ <source src="./Sushi.MP4">
+</video>
+
+
+</body>
+</html>
